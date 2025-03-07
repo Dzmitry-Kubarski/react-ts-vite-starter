@@ -1,4 +1,4 @@
-import Icon from '@/shared/assests/icon.svg?react';
+import Icon from '@/shared/assests/icon.svg?react'
 
 export const TasksPage = () => {
     return (
@@ -8,5 +8,5 @@ export const TasksPage = () => {
                 <Icon width={300} height={300} />
             </div>
         </div>
-    );
-};
+    )
+}
