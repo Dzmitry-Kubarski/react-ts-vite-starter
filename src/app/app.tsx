@@ -1,5 +1,6 @@
 import { Link, Outlet, Route, Routes } from 'react-router-dom'
 
+import { ServerErrorPage } from '@/pages/error'
 import { MainPage } from '@/pages/main'
 import { TasksPage } from '@/pages/tasks'
 import { ROUTES } from '@/shared/routes'
@@ -22,6 +23,8 @@ const App = () => {
                     <Route path={ROUTES.ROOT} element={<Outlet />}>
                         <Route path={ROUTES.HOME} element={<MainPage />} />
                         <Route path={ROUTES.TASKS} element={<TasksPage />} />
+
+                        <Route path={ROUTES.SERVER_ERROR} element={<ServerErrorPage />} />
                     </Route>
                 </Routes>
             </div>
